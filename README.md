@@ -1,5 +1,5 @@
 # RabbitMQ示例
-- RabbitMQ示例1：哈喽世界
+- [RabbitMQ示例1：哈喽世界](https://github.com/Jalon2015/RabbitmqDemo/blob/master/RabbitMQ%E7%A4%BA%E4%BE%8B1%EF%BC%9A%E5%93%88%E5%96%BD%E4%B8%96%E7%95%8C.md)
 - RabbitMQ示例2：工作队列
 - RabbitMQ示例3：发布与订阅【fanout交换机】
 - RabbitMQ示例4：路由【direct交换机】

@@ -24,7 +24,7 @@ channel.exchangeDeclare(EXCHANGE_NAME, "direct");
 ```java
 // 定义一个error消息
 String messageError = "error: this is log error";
-// 发布消息到交换机，第二个参数error就是指定消息类型
+// 发布消息到交换机，第二个参数error就是路由信息
 channel.basicPublish(EXCHANGE_NAME, "error", null, messageError.getBytes());
 System.out.println("send: " + messageError);
 ```
@@ -32,7 +32,7 @@ System.out.println("send: " + messageError);
 **绑定信息【消费者】**：消费者在将队列绑定到交换机时，可以指定消息的特定信息，这个信息就称作**绑定信息(binding key)**，代码如下
 
 ```java
-// 将队列绑定到交换机上，第三个参数就是消息类型，这里为空，表示队列接收交换机传来的所有消息
+// 将队列绑定到交换机上，第三个参数就是绑定信息，这里为空，表示队列接收交换机传来的所有消息
 channel.queueBind(queue, EXCHANGE_NAME, "");
 // 将第三个参数改为error，表示队列只接受交换机传来的类型为error的消息
 channel.queueBind(queue, EXCHANGE_NAME, "error");

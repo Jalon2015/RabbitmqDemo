@@ -26,6 +26,8 @@ RabbitMQ类似邮局
 
 ![image-20210317122121868](https://i.loli.net/2021/03/17/JPfcIt9iZXvWBsq.png)
 
+*(图片来自RabbitMQ官网)*
+
 ## 代码
 
 消费者`Recv.java`
@@ -95,4 +97,4 @@ public class Send {
 
 ## 参考
 
-[RabbitMQ官网教程：第一节](https://www.rabbitmq.com/tutorials/tutorial-one-java.html)
+- [RabbitMQ官网教程：第一节](https://www.rabbitmq.com/tutorials/tutorial-one-java.html)
