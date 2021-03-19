@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3509e34a-6156-4171-aa5e-552cfec540cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RabbitMQ示例1：哈喽世界.md" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ示例1：哈喽世界.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +53,29 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jalon.mq.rabbitmq.chapter1.helloworld" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CompanyProject\JavaProject\RabbitmqDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Send">
+  <component name="RunManager" selected="Application.Recv2">
     <configuration name="Recv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jalon.mq.rabbitmq.chapter1.helloworld.Recv" />
+      <module name="RabbitmqDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jalon.mq.rabbitmq.chapter1.helloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Recv2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jalon.mq.rabbitmq.chapter1.helloworld.Recv2" />
       <module name="RabbitmqDemo" />
       <extension name="coverage">
         <pattern>
@@ -86,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Recv2" />
         <item itemvalue="Application.Send" />
         <item itemvalue="Application.Recv" />
       </list>
@@ -109,22 +126,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="170" key="FileChooserDialogImpl/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616141286524" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616144356852">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616149328193">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616144356852">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328193" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616149328192">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616144356852">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328192" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616149328192">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616144356852">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328192" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616149328192">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328192" />
     <state x="301" y="74" key="SettingsEditor" timestamp="1616141308101">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
