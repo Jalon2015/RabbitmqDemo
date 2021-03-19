@@ -166,3 +166,8 @@ public class ReceiveLogsTopic2 {
 ![image-20210317142537591](https://i.loli.net/2021/03/17/veYQqCmf8R2nh54.png)
 
 ![image-20210317142604643](https://i.loli.net/2021/03/17/rdCNcB1x2GIailJ.png)
+
+## 参考
+
+[RabbitMQ官网教程：第五节](https://www.rabbitmq.com/tutorials/tutorial-five-java.html)
+

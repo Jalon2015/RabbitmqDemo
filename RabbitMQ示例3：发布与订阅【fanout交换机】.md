@@ -6,7 +6,7 @@
 
 ## 知识点
 
-### 交换机
+### 1. 交换机
 
 在Rabbit'MQ中，生产者不是直接把消息发布到队列（它甚至不知道队列的存在），而是通过**交换机**实现，下图中的P代表生产者，X代表交换机，红色的是队列
 
@@ -14,7 +14,7 @@
 
 > PS：前面的章节，没有涉及到交换机的概念，都是直接对队列进行发送和接收，是因为用了默认的交换机direct
 
-**默认的交换机**
+1.1. **默认的交换机**
 
 默认的交换机类型是`direct`，交换机名字为空字符串`""`；
 
@@ -28,7 +28,7 @@ channel.basicPublish("", "hello", null, message.getBytes());
 
 上面的代码也可以看作是生产者`P`直接将消息`message`发送到队列`hello`（但是从技术上来讲是不成立的，还是要经过默认交换机）
 
-**交换机种类**
+1.2. **交换机种类**
 
 交换机总共有4种：direct, topic, headers, fanout
 
@@ -39,23 +39,23 @@ channel.basicPublish("", "hello", null, message.getBytes());
 | Topic exchange   | amq.topic                               |
 | Headers exchange | amq.match (and amq.headers in RabbitMQ) |
 
-**fanout交换机**：fanout会把所有的消息发布到所有已知的队列（即绑定到fanout交换机的队列），类似广播机制
+1.3. **fanout交换机**：fanout会把所有的消息发布到所有已知的队列（即绑定到fanout交换机的队列），类似广播机制
 
 ```java
 // 声明交换机类型：fanout，即广播模式
 channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
 ```
 
-**binding绑定**：交换机和队列之间的关系就是绑定关系，如下图所示
+1.4. **binding绑定**：交换机和队列之间的关系就是绑定关系，如下图所示
 
 ```java
-// 将队列绑定到交换机上，第三个参数就是消息类型，这里为空，表示队列接收交换机传来的所有消息
+// 将队列绑定到交换机上，第三个参数就是路由信息，这里为空，表示队列接收交换机传来的所有消息
 channel.queueBind(queue, EXCHANGE_NAME, "");
 ```
 
 ![image-20210315170545616](https://i.loli.net/2021/03/15/9MICBOyzP8icrRA.png)
 
-### 临时队列
+### 2. 临时队列
 
 顾名思义，就是临时用一下，用完就会删掉（比如程序退出，临时队列就会被清掉）
 
@@ -151,3 +151,8 @@ public class ReceiveLog {
 ![image-20210317142005653](https://i.loli.net/2021/03/17/G6hn7ZasCdEuQO3.png)
 
 ![image-20210317142035145](https://i.loli.net/2021/03/17/Q6u9lez4EKpH5nm.png)
+
+## 参考
+
+[RabbitMQ官网教程：第三节](https://www.rabbitmq.com/tutorials/tutorial-three-java.html)
+

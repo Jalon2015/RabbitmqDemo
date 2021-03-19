@@ -180,3 +180,8 @@ public class ReceiveLogsDirect2 {
 ![image-20210317142209765](https://i.loli.net/2021/03/17/jHlObfwUGJdB95h.png)
 
 ![image-20210317142237238](https://i.loli.net/2021/03/17/UZcnRtofwvi4T65.png)
+
+## 参考
+
+[RabbitMQ官网教程：第四节](https://www.rabbitmq.com/tutorials/tutorial-four-java.html)
+

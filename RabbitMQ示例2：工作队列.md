@@ -16,15 +16,21 @@ public class NewTask {
     private final static String QUEUE_NAME = "work_queue";
 
     public static void main(String[] args) {
+        // 创建连接工厂
         ConnectionFactory factory = new ConnectionFactory();
+        // 设置RabbitMQ服务器地址（默认也是localhsot)
         factory.setHost("localhost");
         try {
+            // 创建连接
             Connection connection = factory.newConnection();
+            // 创建频道
             Channel channel = connection.createChannel();
+            // 声明队列
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-            // 耗时1S
+            // 这里"hello."包含一个"."，表示耗时1S
             String message = "hello.";
             for (int i = 0; i < 9; i++) {
+                // 发布消息
                 channel.basicPublish("", QUEUE_NAME,null, message.getBytes());
                 System.out.println("send:" + message);
             }
@@ -85,15 +91,13 @@ public class Work {
 ```
 ## 知识点
 
-### 轮询
+### 1. 轮询机制
 
 > 定义：消息分发默认是均匀分发到每个消费者手中，这种分发机制就是轮询机制
 
-
-
 比如有一个生产者，三个消费者；生产者发了九条消息，那么三个消费者每人可以拿到三条消息
 
-
+与之对应的是**公平机制**，下面会讲到
 
 #### 示例：
 
@@ -109,7 +113,7 @@ public class Work {
 
 ![3dkgo-zbkn7](https://i.loli.net/2021/03/15/uvFjJAcS1iyVx7w.gif)
 
-### 消息确认
+### 2. 消息确认
 
 > 定义：生产者发送消息，消费者接收消息；当消费者收到消息，会给生产者回复**确认收到**（默认手动），然后生产者就会立即删除该消息
 
@@ -189,7 +193,7 @@ channel.basicConsume(QUEUE_NAME, autoAck, callback, consumeTag->{});
 
 > 结论：手动确认时，如果中断消费者，那么该消费者已接受但尚未确认的消息，会分配给其他消费者(伪随机，不是完全随机)
 
-### 消息持久化
+### 3. 消息持久化
 
 上面的手动确认，只是保证了消费者如果挂掉，消息不会丢失
 但是如果是RabbitMQ服务挂了呢？
@@ -236,12 +240,14 @@ channel.basicConsume(QUEUE_NAME_DURABLE, true, callback, consumeTag->{});
 
 ```
 
-### 公平分配
+### 4. 公平机制
 
-前面的例子，我们看到，就算消费者忘记手动确认，RabbitMQ还是将消息均匀的分配给了每个消费者（即忘记确认的消费者后续还会收到消息）
-其实这是不合理的，因为这样就导致，那些忘记确认的消费者一直占着消息不去处理，造成消息阻塞，RabbitMQ占用内存也会越来越大
+前面的例子，我们看到，就算消费者忘记手动确认，RabbitMQ还是将消息均匀的分配给了每个消费者（即忘记确认的消费者后续还会收到消息），
+其实这是不合理不公平的，因为这样就导致，那些忘记确认的消费者一直占着消息不去处理，造成消息阻塞，RabbitMQ占用内存也会越来越大
 
-> 定义：当消费者确认了一个消息后，RabbitMQ才会给它分配下一个消息，从而充分利用消费者的工作线程
+> PS：公平分配指的是能者多劳，多劳多得，而不是平均分配。
+>
+> 比如当消费者确认了一个消息后，RabbitMQ才会给它分配下一个消息，从而充分利用消费者的工作线程，这个就属于比较公平的做法
 
 #### 示例
 
@@ -258,10 +264,6 @@ channel.basicQos(prefetchCount);
 - 三个消费者顺序启动(Work1, Work2, Work3)，然后启动生产者(NewTask)
 - 观察控制台，可以看到，Work3只接受了一条消息，Work1和Work2分别接收了4条消息
 - ![2h1pu-urzvu](https://i.loli.net/2021/03/15/1As7oZKjqLryTY5.gif)
-
-
-
-> 结论：通过在消费者中设置`channel.basicQos(1);`，可以保证消息的公平分配
 
 
 

@@ -151,3 +151,8 @@ public class RPCServer {
 ![image-20210317142802139](https://i.loli.net/2021/03/17/1F2XdNul6OB5AGx.png)
 
 ![image-20210317142834587](https://i.loli.net/2021/03/17/6yUsuCf7eNt4cEQ.png)
+
+## 参考
+
+[RabbitMQ官网教程：第六节](https://www.rabbitmq.com/tutorials/tutorial-six-java.html)
+

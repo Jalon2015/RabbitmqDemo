@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3509e34a-6156-4171-aa5e-552cfec540cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/RabbitmqDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RabbitMQ示例1：哈喽世界.md" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ示例1：哈喽世界.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ示例4：路由【direct交换机】.md" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ示例4：路由【direct交换机】.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Recv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Recv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jalon/mq/rabbitmq/chapter1/helloworld/Recv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jalon/mq/rabbitmq/chapter1/helloworld/Recv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,22 +109,22 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="170" key="FileChooserDialogImpl/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616141286524" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616143505953">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616144356852">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616143505953" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616143505952">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616144356852">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616143505952" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616143505952">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616144356852">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616143505952" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616143505952">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616144356852">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616143505952" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616144356852" />
     <state x="301" y="74" key="SettingsEditor" timestamp="1616141308101">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
