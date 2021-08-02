@@ -7,7 +7,7 @@
     <list default="true" id="3509e34a-6156-4171-aa5e-552cfec540cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RabbitMQ示例1：哈喽世界.md" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ示例1：哈喽世界.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter1/helloworld/Send.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalon/mq/rabbitmq/chapter6/rpc/Demo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +27,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1psi87uFFG1XaFLVKluZyNUnWSY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -51,6 +44,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -109,6 +103,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -126,26 +123,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="170" key="FileChooserDialogImpl/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616141286524" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616149328193">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616149706914">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328193" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616149328192">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149706914" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616149706914">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328192" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616149328192">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149706914" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616149706914">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328192" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616149328192">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149706914" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616149706914">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149328192" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616149706914" />
     <state x="301" y="74" key="SettingsEditor" timestamp="1616141308101">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="74" key="SettingsEditor/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616141308101" />
+    <state x="502" y="162" width="596" height="536" key="find.popup" timestamp="1616376353151">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="502" y="162" width="596" height="536" key="find.popup/0.0.1600.860/-1366.66.1366.728@0.0.1600.860" timestamp="1616376353151" />
     <state x="174" y="40" key="new project wizard" timestamp="1616136748396">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
